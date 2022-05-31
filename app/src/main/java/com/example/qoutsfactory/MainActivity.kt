@@ -16,12 +16,10 @@ class MainActivity : AppCompatActivity() {
     private val quoteAuthor: TextView
         get() = findViewById(R.id.quoteAuthor)
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ViewModelProvider(this, MainViewModelFactory(applicationContext))[MainViewModel::class.java]
-            .also { mainViewModel = it }
+        mainViewModel = ViewModelProvider(this, MainViewModelFactory(application)).get(MainViewModel::class.java)
         setQuote(mainViewModel.getQuote())
 
     }

@@ -8,7 +8,7 @@
     android:padding="32dp"
     android:paddingTop="32dp"
     android:paddingBottom="0dp"
-    tools:context="com.cheezycode.quotifyApp.MainActivity">
+    tools:context="com.example.qoutsfactory.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -114,7 +114,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/ic_share" />
+        app:srcCompat="@drawable/ic_share"
+        android:contentDescription="TODO" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
